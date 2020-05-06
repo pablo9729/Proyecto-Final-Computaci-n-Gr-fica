@@ -1,0 +1,13 @@
+﻿  ProyectoFinal.cpp
+C:\Users\Pablo Angel\Documents\PFCG\Proyecto_Final\Proyecto_Final\ProyectoFinal.cpp(719,24): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Pablo Angel\Documents\PFCG\Proyecto_Final\Proyecto_Final\ProyectoFinal.cpp(1595,15): warning C4305: '+=': truncamiento de 'double' a 'float'
+C:\Users\Pablo Angel\Documents\PFCG\Proyecto_Final\Proyecto_Final\ProyectoFinal.cpp(1602,15): warning C4305: '-=': truncamiento de 'double' a 'float'
+C:\Users\Pablo Angel\Documents\PFCG\Proyecto_Final\Proyecto_Final\ProyectoFinal.cpp(1608,15): warning C4305: '+=': truncamiento de 'double' a 'float'
+C:\Users\Pablo Angel\Documents\PFCG\Proyecto_Final\Proyecto_Final\ProyectoFinal.cpp(1614,15): warning C4305: '-=': truncamiento de 'double' a 'float'
+C:\Users\Pablo Angel\Documents\PFCG\Proyecto_Final\Proyecto_Final\ProyectoFinal.cpp(1808,11): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Pablo Angel\Documents\PFCG\Proyecto_Final\Proyecto_Final\ProyectoFinal.cpp(1809,11): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Pablo Angel\Documents\PFCG\Proyecto_Final\Proyecto_Final\ProyectoFinal.cpp(1813,18): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Pablo Angel\Documents\PFCG\Proyecto_Final\Proyecto_Final\ProyectoFinal.cpp(1814,18): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Pablo Angel\Documents\PFCG\Proyecto_Final\Proyecto_Final\ProyectoFinal.cpp(1816,10): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Pablo Angel\Documents\PFCG\Proyecto_Final\Proyecto_Final\ProyectoFinal.cpp(1817,10): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+  Proyecto_Final.vcxproj -> C:\Users\Pablo Angel\Documents\PFCG\Proyecto_Final\Debug\Proyecto_Final.exe

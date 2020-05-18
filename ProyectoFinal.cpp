@@ -158,6 +158,7 @@ bool recorrido023 = false;
 
 //Animación de Homero////////////////////////////////////
 float Bder = 0.0f;
+float var01 = 3.5f;
 float Rotacion = 0.0f;
 float Tras01 = 0.0f;
 
@@ -1929,8 +1930,8 @@ int main()
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(0.0f, -100.0f, 0.0f));
-		model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-		model = glm::scale(model, glm::vec3(1.0f, 0.947f, 0.636f));
+		//model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+		//model = glm::scale(model, glm::vec3(1.0f, 0.947f, 0.636f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		SyM.Draw(lightingShader);
 
@@ -2047,7 +2048,7 @@ int main()
 		//--------------------Cabeza---------------
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
-		model = glm::translate(model, glm::vec3(-85.0f, -87.3f, -93.0f + Tras01));
+		model = glm::translate(model, glm::vec3(-85.0f + var01, -87.3f, -93.0f + Tras01));
 		model = glm::rotate(model, glm::radians(Rotacion), glm::vec3(0.0f, 1.0f, 0.0f));
 		//model = glm::scale(model, glm::vec3(1.2f, 1.2f, 1.2f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -2056,7 +2057,7 @@ int main()
 		//--------------------Torso---------------
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
-		model = glm::translate(model, glm::vec3(-85.0f, -92.5f, -93.0f + Tras01));
+		model = glm::translate(model, glm::vec3(-85.0f + var01, -92.5f, -93.0f + Tras01));
 		model = glm::rotate(model, glm::radians(Rotacion), glm::vec3(0.0f, 1.0f, 0.0f));
 		//model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 		//model = glm::scale(model, glm::vec3(1.2f, 1.2f, 1.2f));
@@ -2066,7 +2067,7 @@ int main()
 		//--------------------Brazo dereccho---------------
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
-		model = glm::translate(model, glm::vec3(-87.0f, -91.0f, -93.0f + Tras01));
+		model = glm::translate(model, glm::vec3(-87.0f + var01, -91.0f, -93.0f + Tras01));
 		model = glm::rotate(model, glm::radians(Bder), glm::vec3(1.0f, 0.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(Rotacion), glm::vec3(0.0f, 1.0f, 0.0f));
 		//model = glm::scale(model, glm::vec3(1.2f, 1.2f, 1.2f));
@@ -2076,7 +2077,7 @@ int main()
 		//--------------------Brazo Izquierdo---------------
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
-		model = glm::translate(model, glm::vec3(-83.0f, -91.1f, -93.0f + Tras01));
+		model = glm::translate(model, glm::vec3(-83.0f + var01, -91.1f, -93.0f + Tras01));
 		model = glm::rotate(model, glm::radians(-Bder), glm::vec3(1.0f, 0.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(Rotacion), glm::vec3(0.0f, 1.0f, 0.0f));
 		//model = glm::scale(model, glm::vec3(1.2f, 1.2f, 1.2f));
@@ -2086,7 +2087,7 @@ int main()
 		//--------------------Piernas---------------
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
-		model = glm::translate(model, glm::vec3(-85.0f, -95.1f, -93.0f + Tras01));
+		model = glm::translate(model, glm::vec3(-85.0f + var01, -95.1f, -93.0f + Tras01));
 		model = glm::rotate(model, glm::radians(Rotacion), glm::vec3(0.0f, 1.0f, 0.0f));
 		//model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 		//model = glm::scale(model, glm::vec3(1.2f, 1.2f, 1.2f));
@@ -2096,7 +2097,7 @@ int main()
 		//--------------------Pierna derecha---------------
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
-		model = glm::translate(model, glm::vec3(-86.25f, -95.1f, -93.0f + Tras01));
+		model = glm::translate(model, glm::vec3(-86.25f + var01, -95.1f, -93.0f + Tras01));
 		model = glm::rotate(model, glm::radians(-Bder), glm::vec3(1.0f, 0.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(Rotacion), glm::vec3(0.0f, 1.0f, 0.0f));
 		//model = glm::scale(model, glm::vec3(1.2f, 1.2f, 1.2f));
@@ -2106,7 +2107,7 @@ int main()
 		//--------------------Pierna Izquierda---------------
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
-		model = glm::translate(model, glm::vec3(-83.75f, -95.1f, -93.0f + Tras01));
+		model = glm::translate(model, glm::vec3(-83.75f + var01, -95.1f, -93.0f + Tras01));
 		model = glm::rotate(model, glm::radians(Bder), glm::vec3(1.0f, 0.0f, 0.0f));
 		model = glm::rotate(model, glm::radians(Rotacion), glm::vec3(0.0f, 1.0f, 0.0f));
 		//model = glm::scale(model, glm::vec3(1.2f, 1.2f, 1.2f));
@@ -2588,7 +2589,7 @@ void animacion1()
 			{
 				posy = 0;
 				recorrido14 = false;
-				recorrido01 = true;
+				//recorrido01 = false;
 			}
 		}
 
@@ -2857,7 +2858,7 @@ void animacion3()
 	{
 		if (recorrido101)
 		{
-			Bder -= 1.0f;
+			Bder -= 1.2f;
 
 			if (Bder < -35)
 			{
@@ -2868,7 +2869,7 @@ void animacion3()
 
 		if (recorrido102)
 		{
-			Bder += 1.0f;
+			Bder += 1.2f;
 
 			if (Bder > 35)
 			{
@@ -2886,11 +2887,11 @@ void animacion4()
 {
 
 	//Recorrido Virtual
-	if (circuito04)
+	if (circuito03)
 	{
 		if (recorrido103)
 		{
-			Tras01 += 1.0f;
+			Tras01 += 0.25f;
 
 			if (Tras01 > 212)
 			{
